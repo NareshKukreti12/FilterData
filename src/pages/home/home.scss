@@ -1,0 +1,98 @@
+page-home {
+    
+   .btn_header{
+     font-size: 1.4rem !important;  
+     box-shadow: unset !important;
+   }
+   .btnDel{
+    font-size: 2rem !important;   
+    padding-left: 20px !important;
+    padding-right: 20px !important;
+    width: 80px !important;
+    display: flex;
+    justify-content: center;
+    justify-items: center;    
+  }
+  .bgDelete{
+    background-color: color($colors,primary) !important;
+  }
+  .bgPublished{
+    background-color: color($colors,secondary) !important;
+  }
+  .anim{
+    -moz-animation: fadein 4s; /* Firefox */
+    -webkit-animation: fadein 4s; /* Safari and Chrome */
+    -o-animation: fadein 4s; /* Opera */
+   
+  }
+  h2{
+    text-transform: capitalize;
+  }
+  .show{
+    opacity: 1;
+  }
+  .div_loader{
+    position: fixed;
+    height: 100%;
+    width: 100%;
+  //  background: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+  }
+  .loader{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+ } 
+ ion-spinner * {
+    width: 28px;
+    height: 28px;
+    stroke: color($colors,primary) !important;
+    fill: #222;//color($colors,dark) !important;
+  }
+  ion-list h2{
+      color: color($colors,dark) !important;
+     
+  }
+  @-moz-keyframes fadein { /* Firefox */
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
+}
+@-webkit-keyframes fadein { /* Safari and Chrome */
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
+}
+@-o-keyframes fadein { /* Opera */
+    from {
+        opacity:0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+@-webkit-keyframes fadeout { /* Safari and Chrome */
+    from {
+        opacity:1;
+    }
+    to {
+        opacity:0;
+    }
+}
+@-o-keyframes fadeout { /* Opera */
+    from {
+        opacity:1;
+    }
+    to {
+        opacity: 0;
+    }
+}
+}
